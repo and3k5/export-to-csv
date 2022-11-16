@@ -45,7 +45,7 @@ describe('ExportToCsv', () => {
         };
 
         const exportToCsvInstance = new ExportToCsv(options);
-        const string = exportToCsvInstance.generateCsv(mockData, true);
+        const string = exportToCsvInstance.generateCsv(mockData, true) as string;
 
         const firstLine = string.split('\n')[0];
         const keys = firstLine.split(',').map((s: string) => s.trim());
@@ -98,7 +98,7 @@ describe('ExportToCsv As A Text File', () => {
         };
 
         const exportToCsvInstance = new ExportToCsv(options);
-        const string = exportToCsvInstance.generateCsv(mockData, true);
+        const string = exportToCsvInstance.generateCsv(mockData, true) as string;
 
         const firstLine = string.split('\n')[0];
         const keys = firstLine.split(',').map((s: string) => s.trim());

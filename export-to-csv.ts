@@ -76,7 +76,7 @@ export class ExportToCsv {
     /**
      * Generate and Download Csv
      */
-    generateCsv(jsonData: any, shouldReturnCsv: boolean = false): void | any {
+    generateCsv(jsonData: any, shouldReturnCsv: boolean = false): void | string {
 
         // Make sure to reset csv data on each run
         this._csv = '';
